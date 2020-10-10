@@ -72,7 +72,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         if(mapView!=null)
             mapView.onCreate(savedInstanceState);
@@ -82,8 +82,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng chungAngUniv = new LatLng(37.505626, 126.957296);
+        mMap.addMarker(new MarkerOptions().position(chungAngUniv).title("Marker in chungAng University"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(chungAngUniv));
     }
 }
